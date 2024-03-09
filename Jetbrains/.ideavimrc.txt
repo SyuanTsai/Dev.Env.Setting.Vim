@@ -40,6 +40,10 @@ execute 'source' 'C:/GitFile/Dev.Env.Setting/Vimfile/Jetbrains/Common_Ideavimrc.
 if has('ide')
     if &ide =~? 'JetBrains Rider'
         execute 'source' 'C:/GitFile/Dev.Env.Setting/Vimfile/Jetbrains/Rider_IdeaVimrc.txt'
-        echo "Using JetBrains Rider Setting"
+    elseif &ide =~? 'WebStorm'
+        execute 'source' 'C:/GitFile/Dev.Env.Setting/Vimfile/Jetbrains/WebStorm_IdeaVimrc.txt'
+    elseif &ide =~? 'DataGrip'
+        execute 'source' 'C:/GitFile/Dev.Env.Setting/Vimfile/Jetbrains/DataGrip_IdeaVimrc.txt'
     endif
+    echo "Using " . &ide . " Setting"
 endif
