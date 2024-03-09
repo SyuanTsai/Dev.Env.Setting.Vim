@@ -1,0 +1,11 @@
+" 當前行顯示絕對行號其他行顯示相對行號
+set number relativenumber
+
+" 修改Vim指令的剪貼簿新增到OS層級
+set clipboard+=unnamed
+
+" 清除所有的自定義鍵盤映射
+mapclear
+
+" 開啟增量搜索功能
+set incsearch
