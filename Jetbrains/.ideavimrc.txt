@@ -37,6 +37,7 @@ Plug 'tpope/vim-commentary'
 execute 'source' 'C:/GitFile/Dev.Env.Setting/Vimfile/Jetbrains/Common_Ideavimrc.txt'
 
 " IdeaVim settings
+" Ref: https://github.com/JetBrains/ideavim/blob/master/README.md#ide-specific-options
 if has('ide')
     if &ide =~? 'JetBrains Rider'
         execute 'source' 'C:/GitFile/Dev.Env.Setting/Vimfile/Jetbrains/Rider_IdeaVimrc.txt'
